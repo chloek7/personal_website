@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+        <title>Chloe Kentebe | Experience</title>
+        <script>
+            // relay for life
+            let imagesR = ["relay2.jpeg", "relay.jpeg"];
+            let imgDescR = [
+                "Chloe wearing her team captain hat that her friemd made at the 2024 COSSOT Relay for Life",
+                "Chloe and her two friends taking a picture at the 2024 COSSOT Relay for Life event held at Upper Canada College."
+            ];
+
+            // pictures changes every 5 seconds: relay for life
+            let i = 0
+            imgInterR = setInterval(function() {
+                let img = document.querySelector('#firstImgR');
+                img.src = imagesR[i % imagesR.length];
+                img.alt = imgDescR[i % imgDescR.length]
+                i++
+
+                if (i == 80){
+                clearInterval(imgInterR);
+                }
+            }, 5000);
+
+            // black cultural prayers
+            let imagesB = ["bsa2.jpg", "bsa3.jpg", "bsa4.jpg", "bsa1.jpg"];
+            let imgDescB = [
+                "Havergal's Black Student Affinity Grads taking a picture with Justice and Nia Faith.",
+                "Havergal's Black Student Affinity students having a discussion with Justice and Nia Faith.",
+                "Havergal's upper school students learning how to play the steal pan from Naomi McDonald.",
+                "Havergal's Black Student Affinity Grads on the podium with Justice and Niath faith as they present."
+            ];
+
+            // pictures changes every 5 seconds: relay for life
+            let j = 0
+            imgInterB = setInterval(function() {
+                let img = document.querySelector('#firstImgB');
+                img.src = imagesB[i % imagesB.length];
+                img.alt = imgDescRe[i % imgDescB.length]
+                j++
+
+                if (j == 160){
+                clearInterval(imgInterB);
+                }
+            }, 5000);
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Chloe Kentebe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="ms-auto"> <!-- shift navigation items to the right -->
+                        <div class="navbar-nav">
+                            <a class="nav-link " href="index.html">Home</a>
+                            <a class="nav-link" href="education.html">Education</a>
+                            <a class="nav-link active" aria-current="page" href="experience.html">Experience</a>
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- experience banner -->
+         <div class="header">
+            <h1>Experience</h1>
+         </div>
+
+         <!-- 2024 banner -->
+          <div class="headerOp">
+            <h2>2024</h2>
+          </div>
+
+
+        <!-- making section 1  -->
+         <!-- exp title -->
+         <div class="d-flex flex-column flex-md-row align-items-center">
+            <h5 class="expTitle">Relay for Life Team Captain</h5>
+         </div>
+
+        <div class="picExp d-flex justify-content-center">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <!-- pictures related to relay for life -->
+                <img id="firstImgR" class="imgExp" src="relay.jpeg" alt="Chloe and her two friends taking a picture at the 2024 COSSOT Relay for Life event held at Upper Canada College.">
+
+                <!-- blurb about relay for life -->
+                <p class="relayL mt-4 mt-md-0 ml-md-3">
+                    Being a Relay for Life team captain was a delightful experience because of the real-world impact that I could make for my family! Within this role, I continuously advocated for one hundred percent participation because every dollar counts towards funding cancer research and promoting a stronger society. In less than a month, the 12 of us were able to collectively raise over $2000; and on the day of the event, we celebrated the cancer survivors, reflected on who we relay for, and walked for them and those who left us too soon.                </p>
+            </div>
+        </div>
+
+        <!-- making section 2  -->
+         <!-- exp title -->
+         <div class="d-flex flex-column flex-md-row align-items-center justify-content-end">
+            <h5 class="expTitle" style="text-align: right;">Global Learning & Leading Diploma Graduate</h5>
+        </div>
+
+        <div class="picExp d-flex justify-content-center">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <!-- blurb about GLLD -->
+                <p class="relayR mt-4 mt-md-0 ml-md-3 order-2 order-md-1">
+                    Once I was selected at the start of my grade 10 year, I had the privilege to participate in social justice & DEI, social innovation, global citizenship, and developing cultural competence modules. I actively reflected on my level of mastering the global, learning, and leading skills and principles. The program culminated with a final research project during grade 12. I chose to focus on a topic that captures my passions and current study, which was generative AI’s consequences and implications on education within and beyond my school community. I was in charge of the research and presentation design and was given the platform to present to and facilitate a discussion with a panel of two high school students and two faculty members.
+                </p>
+
+                <!-- receiving GLLD pin -->
+                <img height="375" class="order-1 order-md-2" src="glld.jpeg" alt="Chloe receiving her GLLD pin after completing the program.">
+            </div>
+        </div>
+
+        <!-- making section 3  -->
+         <!-- exp title -->
+         <div class="d-flex flex-column flex-md-row align-items-center">
+            <h5 class="expTitle">2024 Black Cultural Prayers Committee Lead</h5>
+         </div>
+
+        <div class="picExp d-flex justify-content-center">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <!-- pictures related to black cultural prayers -->
+                <img id="firstImgB" height="325" src="bsa1.jpg" alt="Havergal's Black Student Affinity Grads on the podium with Justice and Niath faith as they present.">
+
+                <!-- blurb about black cultural prayers -->
+                <p class="relayL mt-4 mt-md-0 ml-md-3">
+                    When I was appointed the committee lead position, I was in charge of organizing the prayer schedule by collaborating with the music and prayers representatives. In order to maximize efficiency leading up to the event and diversity and inclusion within the event itself, I ensured that five students would be able to speak during the gathering. Some of the Black Student Affinity (BSA) members, including myself, gathered a few instances prior in order to rehearse the song that we sang during curtain closing. The event also included a steel pan performance by one of the BSA students and a flag procession where each BSA student walked/ran into the hall with the flag(s) that represented their Black heritage. The main presentation was given by two guest speakers: Justice and Nia Faith. They shared their experiences in entrepreneurship, especially as Black women, and their advice on how to create positive change while staying true to your values. I also had the opportunity to direct the meeting that shaped the presentation of our inspirational guest speakers.
+                </p>
+            </div>
+        </div>
+
+
+    </body>
+
+    <!-- footer -->
+    <footer class="bg-light text-dark py-4">
+
+        <div class="container">
+            <div class="row"></div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center py-1">
+                <p>Copyright &#169; 2024 Shayane Inc.</p>
+                <ul class="list-unstyled list-inline mb-4">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/chloekentebe/" target="_blank" class="text-dark fs-2">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</html>

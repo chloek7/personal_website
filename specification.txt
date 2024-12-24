@@ -1,0 +1,3 @@
+HTML tags: header, body, footer, link, div, nav, a, script, button, span, ul, li, hr, html DOCTYPE, br, and img.
+CSS properties: background-color, color, margin, text-align, padding, font, border, gap, display, height, and max.
+I will use JavaScript for creating automatic image slideshows and Bootstrap for making my website look sleek and organized.
